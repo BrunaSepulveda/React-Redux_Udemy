@@ -33,6 +33,8 @@ const App = () => {
         <Card titulo="Componente recebe filhos como props" color="#00BFFF">
           <Familia2 sobrenome="Silva">
             <MembroFamilia nome="João" />
+            <MembroFamilia nome="Paula" />
+            <MembroFamilia nome="Marcos" />
           </Familia2>
         </Card>
       </div>
