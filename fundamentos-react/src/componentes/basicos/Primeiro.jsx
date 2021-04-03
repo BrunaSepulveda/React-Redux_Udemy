@@ -1,11 +1,10 @@
 import React from 'react'
 
-function Primeiro (props) {
-  console.log(props)
+function Primeiro() {
   return (
-  <div>
-    Primeiro Componente
-  </div>
+    <div>
+      Primeiro Componente
+    </div>
   )
 }
 
