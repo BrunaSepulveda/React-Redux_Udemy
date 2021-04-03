@@ -5,7 +5,9 @@ import DescricaoAle from './componentes/DescricaoAle';
 import Aleatorio from './componentes/Aleatorio';
 import AleatorioProfessor from './componentes/AleatorioProfessor';
 import Card from './componentes/layout/Card';
-import Familia from './componentes/basicos/Familia'
+import Familia from './componentes/basicos/Familia';
+import Familia2 from './componentes/basicos/Familia2';
+import MembroFamilia from './componentes/basicos/MembroFamília';
 
 const App = () => {
   return (
@@ -25,8 +27,13 @@ const App = () => {
         <Card titulo="Resolução do professor" color="#BC8F8F">
           <AleatorioProfessor min={0} max={60} />
         </Card>
-        <Card titulo="Componente recebendo filhos" color="#FF0000">
+        <Card titulo="Componente recebendo filhos diretamente" color="#FF0000">
           <Familia sobrenome="Ferreira" />
+        </Card>
+        <Card titulo="Componente recebe filhos como props" color="#00BFFF">
+          <Familia2 sobrenome="Silva">
+            <MembroFamilia nome="João" />
+          </Familia2>
         </Card>
       </div>
     </div>
