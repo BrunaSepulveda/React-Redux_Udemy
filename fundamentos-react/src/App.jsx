@@ -12,16 +12,16 @@ const App = () => {
       <h1>Fundamentos React</h1>
 
       <div className="Cards">
-        <Card>
+        <Card titulo="Primeiro Componente React Aula" color="#B0C4DE">
           <Primeiro />
         </Card>
-        <Card titulo="Desafio Aleatório como eu fiz">
+        <Card titulo="Desafio Aleatório como eu fiz" color="#40E0D0">
           <DescricaoAle />
         </Card>
-        <Card titulo="Apenas o componente que gera os números">
+        <Card titulo="Apenas o componente que gera os números" color="#FFDEAD">
           <Aleatorio min={0} max={60} />
         </Card>
-        <Card titulo="Resolução do professor">
+        <Card titulo="Resolução do professor" color="#BC8F8F">
           <AleatorioProfessor min={0} max={60} />
         </Card>
       </div>

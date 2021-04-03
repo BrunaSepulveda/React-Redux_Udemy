@@ -9,13 +9,15 @@ const DescricaoAle = () => {
   return (
     <div>
       Para gerar os numeros aleatórios escreva o intervalo numerico
-      <p>Valor mínimo:
+      <p>Valor mínimo: 
         <input
           type="number"
           name="min"
           onChange={(event) => handleInputNumbers(event)}
         />
-        Valor máximo:
+      </p>
+      <p>
+        Valor máximo: 
         <input
           type="number"
           name="max"

@@ -10,7 +10,8 @@ const Aleatorio = ({ min, max }) => {
   };
   return (
     <div className="Aleatorio"> 
-      Número sorteado entre o número {min} e o número {max} é: {number}
+      <p>Número sorteado entre o {min} e o {max} é:</p>
+      <p> {number} </p>
       <button onClick={randomNumber}>Clique para gerar o número</button>
     </div>
   )
