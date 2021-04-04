@@ -4,6 +4,7 @@ function Primeiro() {
   return (
     <div>
       Primeiro Componente
+      <p>oi bla oi </p> 
     </div>
   )
 }
