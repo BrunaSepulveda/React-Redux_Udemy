@@ -11,6 +11,10 @@ import MembroFamilia from './componentes/basicos/MembroFamília';
 import ListaAlunos from './componentes/repeticao/ListaAlunos'
 import TabelaProdutos from './componentes/repeticao/TabelaProdutos';
 import TabelaProProfessor from './componentes/repeticao/TabelaProProfessor';
+import ParOuImpar from './componentes/repeticao/condicional/ParOuImpar';
+import UsuarioInfo from './componentes/repeticao/condicional/UsuarioInfo';
+import DiretaPai from './componentes/cominicacao/DiretaPai';
+import IndiretaPai from './componentes/cominicacao/IndiretaPai';
 
 const App = () => {
   return (
@@ -48,6 +52,24 @@ const App = () => {
         </Card>
         <Card  titulo="Desafio produtos resolução professor" color="#e0a9ae">
           <TabelaProProfessor />
+        </Card>
+        <Card titulo="Renderização Condicional" color=" #ffc09d">
+          <ParOuImpar numero={13}/>
+          <UsuarioInfo usuario={{nome: "Fernanda"}} />
+        </Card>
+        <Card titulo="Comunicação Direta" color=" #fec200">
+          <DiretaPai />
+        </Card>
+        <Card titulo="Comunicação Indireta" color="#efa46a">
+          <IndiretaPai />
+        </Card>
+        <Card titulo="proxima aula" color=" #dd8d00">
+        </Card>
+        <Card titulo="proxima aula" color="#dfc5b8">
+        </Card>
+        <Card titulo="proxima aula" color="#7a531c">
+        </Card>
+        <Card titulo="proxima aula" color="#ca7f57">
         </Card>
       </div>
     </div>
