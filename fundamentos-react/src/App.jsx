@@ -15,6 +15,7 @@ import ParOuImpar from './componentes/repeticao/condicional/ParOuImpar';
 import UsuarioInfo from './componentes/repeticao/condicional/UsuarioInfo';
 import DiretaPai from './componentes/cominicacao/DiretaPai';
 import IndiretaPai from './componentes/cominicacao/IndiretaPai';
+import Input from './componentes/formulario/Input';
 
 const App = () => {
   return (
@@ -63,7 +64,8 @@ const App = () => {
         <Card titulo="Comunicação Indireta" color="#efa46a">
           <IndiretaPai />
         </Card>
-        <Card titulo="proxima aula" color=" #dd8d00">
+        <Card titulo="Componente Controlado" color=" #dd8d00">
+          <Input />
         </Card>
         <Card titulo="proxima aula" color="#dfc5b8">
         </Card>
