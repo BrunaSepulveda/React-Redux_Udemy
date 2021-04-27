@@ -16,6 +16,8 @@ import UsuarioInfo from './componentes/repeticao/condicional/UsuarioInfo';
 import DiretaPai from './componentes/cominicacao/DiretaPai';
 import IndiretaPai from './componentes/cominicacao/IndiretaPai';
 import Input from './componentes/formulario/Input';
+import Contador from './componentes/contador/Contador';
+import Mega from './componentes/mega/Mega';
 
 const App = () => {
   return (
@@ -67,9 +69,11 @@ const App = () => {
         <Card titulo="Componente Controlado" color=" #dd8d00">
           <Input />
         </Card>
-        <Card titulo="proxima aula" color="#dfc5b8">
+        <Card titulo="Contador" color="#dfc5b8">
+          <Contador numeroInicial={10} /> 
         </Card>
-        <Card titulo="proxima aula" color="#7a531c">
+        <Card titulo="Mega" color="#7a531c">
+          <Mega qtde={2}/>
         </Card>
         <Card titulo="proxima aula" color="#ca7f57">
         </Card>

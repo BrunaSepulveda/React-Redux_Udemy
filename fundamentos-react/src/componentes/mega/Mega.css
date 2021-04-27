@@ -1,0 +1,28 @@
+.Mega input{
+  font-size: 1.4rem;
+  width: 50px;
+  margin: 10px;
+}
+
+.Mega label {
+  margin: 10px;
+}
+
+.Mega p {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-items: center;
+  flex-wrap: wrap;
+}
+.numerosGerados {
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+  justify-self: center;
+  align-self: center;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-color:cadetblue;
+}
