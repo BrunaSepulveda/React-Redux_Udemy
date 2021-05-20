@@ -75,8 +75,6 @@ const App = () => {
         <Card titulo="Mega" color="#7a531c">
           <Mega qtde={2}/>
         </Card>
-        <Card titulo="proxima aula" color="#ca7f57">
-        </Card>
       </div>
     </div>
   )

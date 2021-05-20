@@ -12,13 +12,7 @@ export default props => {
   };
 
   const numerosMega = (qtde) => {
-    const numeros = Array(qtde || 6).fill(0).reduce(
-      (acc) => {
-        const novoNumero = gerarNumerosUnicos(1, 60, acc);
-        return [...acc, novoNumero]
-      }
-      , [])
-      .sort();
+    const numeros = Array(qtde || 6).fill(0).reduce((acc) => {const novoNumero = gerarNumerosUnicos(1, 60, acc);return [...acc, novoNumero]}, []).sort();
     return numeros;
   };
 
