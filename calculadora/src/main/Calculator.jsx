@@ -24,32 +24,33 @@ export default class Calculator extends Component {
     this.addDigit = this.addDigit.bind(this);
   }
 
+
   addDigit(n) { // essa função só chama numeros e ponto
     if (n === '.' && this.state.displayValue.includes('.')) {
       return;
     }
     const clearDisplay = this.state.displayValue === '0'
-      || this.state.clearDisplay; 
+      || this.state.clearDisplay;
 
     const currentValue = clearDisplay ? '' : this.state.displayValue;
     const displayValue = currentValue + n;// os valores são strings então só concatena não soma
     this.setState({ displayValue, clearDisplay: false });
-    
+
     if (n !== '.') {
       const i = this.state.current;
       const newValue = parseFloat(displayValue);
       const values = [...this.state.values];
       values[i] = newValue;
-      this.setState({values});
+      this.setState({ values });
       console.log(values);
     }
   }
 
   setOperation(operation) {
     if (this.state.current === 0) {
-      this.setState({ operation, current: 1, clearDisplay: true})
+      this.setState({ operation, current: 1, clearDisplay: true })
     } else {
-      const equals = operation === '=' ;
+      const equals = operation === '=';
       const currentOperation = this.state.operation;
 
       const values = [...this.state.values];
@@ -99,3 +100,37 @@ export default class Calculator extends Component {
     );
   }
 }
+
+function ispangrama (n) {
+  const alf = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+  const arrayResult = n.map((string) => {
+    const result = string.replace(/\s/g, '').split('').every((letter) => {
+      return alf.includes(letter);
+    })
+
+    if (result) {
+      return "1"
+    } else return '0'
+  })
+  
+  return arrayResult.join('')
+}
+/*
+
+1010
+function ispangrama (n) {
+  const alf = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+  const arrayResult = n.map((string) => {
+
+    const result = alf.every((letter) => {
+      return string.replace(/\s/g, '').split('').includes(letter);
+    })
+
+    if (result) {
+      return "1"
+    } else return '0'
+  })
+  
+  return arrayResult.join('')
+}
+*/
