@@ -11,6 +11,13 @@ import MembroFamilia from './componentes/basicos/MembroFamília';
 import ListaAlunos from './componentes/repeticao/ListaAlunos'
 import TabelaProdutos from './componentes/repeticao/TabelaProdutos';
 import TabelaProProfessor from './componentes/repeticao/TabelaProProfessor';
+import ParOuImpar from './componentes/repeticao/condicional/ParOuImpar';
+import UsuarioInfo from './componentes/repeticao/condicional/UsuarioInfo';
+import DiretaPai from './componentes/cominicacao/DiretaPai';
+import IndiretaPai from './componentes/cominicacao/IndiretaPai';
+import Input from './componentes/formulario/Input';
+import Contador from './componentes/contador/Contador';
+import Mega from './componentes/mega/Mega';
 
 const App = () => {
   return (
@@ -48,6 +55,25 @@ const App = () => {
         </Card>
         <Card  titulo="Desafio produtos resolução professor" color="#e0a9ae">
           <TabelaProProfessor />
+        </Card>
+        <Card titulo="Renderização Condicional" color=" #ffc09d">
+          <ParOuImpar numero={13}/>
+          <UsuarioInfo usuario={{nome: "Fernanda"}} />
+        </Card>
+        <Card titulo="Comunicação Direta" color=" #fec200">
+          <DiretaPai />
+        </Card>
+        <Card titulo="Comunicação Indireta" color="#efa46a">
+          <IndiretaPai />
+        </Card>
+        <Card titulo="Componente Controlado" color=" #dd8d00">
+          <Input />
+        </Card>
+        <Card titulo="Contador" color="#dfc5b8">
+          <Contador numeroInicial={10} /> 
+        </Card>
+        <Card titulo="Mega" color="#7a531c">
+          <Mega qtde={2}/>
         </Card>
       </div>
     </div>
