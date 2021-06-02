@@ -1,10 +1,12 @@
 import React from 'react';
+import Content from '../components/layout/Content';
+import Menu from '../components/layout/Menu';
+import './App.css';
 
-const App = () => {
-  return( 
-  <div className='App'>
-    Component App
-  </div>)
-}
+const App = () => (
+  <div className="App">
+    <Menu />
+    <Content />
+  </div>);
 
 export default App;
